@@ -1,0 +1,14 @@
+<div>
+  <h3>Databinding</h3>
+</div>
+<div>
+  <button (click)="launchEvent($event)">Launch event</button>
+</div>
+<div>
+  <h3>One Way Databinding</h3>
+  <input type="text" name="oneway" [(ngModel)]="hello">
+</div>
+<div>
+  <h3>Two Way Databinding</h3>
+  <span>{{hello}}</span>
+</div>
