@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CustomPipeCapitalizePipe } from './pipes/custom-pipe-capitalize.pipe';
+import { PipesExcerciseComponent } from './components/pipes-excercise/pipes-excercise.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CustomPipeCapitalizePipe,
+    PipesExcerciseComponent
   ],
   imports: [
     BrowserModule,
