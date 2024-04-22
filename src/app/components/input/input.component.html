@@ -1,0 +1,11 @@
+<div>
+  <p>Form Inside a dialog</p>
+  <mat-form-field class="example-full-width">
+    <mat-label>What is your name?</mat-label>
+    <input matInput [(ngModel)]="text">
+  </mat-form-field><br><br>
+  <div mat-dialog-actions>
+    <button mat-flat-button color="primary" [mat-dialog-close] = "text">Ok</button>
+    <button mat-flat-button color="warn" [mat-dialog-close] = "text">Cancel</button>
+  </div>
+</div>
