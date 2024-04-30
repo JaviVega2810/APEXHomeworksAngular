@@ -1,0 +1,13 @@
+<div>
+  <h3>First HomeWork</h3>
+  <div>
+    <p>Using NgClass</p>
+    <span [ngClass]="{'text-red' : active}">Hello</span>
+  </div>
+  <div>
+    <p>Using NgStyle</p>
+    <span [ngStyle]="{color:active ?  'red' : 'black'}">Hello</span>
+  </div>
+  <button (click)="changeColor()">Change Flag</button>
+</div>
+
