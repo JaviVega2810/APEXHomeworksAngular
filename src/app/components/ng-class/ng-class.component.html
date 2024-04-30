@@ -6,7 +6,7 @@
   </div>
   <div>
     <p>Using NgStyle</p>
-    <span [ngStyle]="active ? { color : 'red'} : { color : 'black'}">Hello</span>
+    <span [ngStyle]="{color:active ?  'red' : 'black'}">Hello</span>
   </div>
   <button (click)="changeColor()">Change Flag</button>
 </div>
