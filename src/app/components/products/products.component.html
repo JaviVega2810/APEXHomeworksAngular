@@ -1,11 +1,11 @@
 <div>
   <h1>Listado de Productos</h1>
   <mat-grid-list cols="3" rowHeight="2:1">
-    <mat-grid-tile>1</mat-grid-tile>
-    <mat-grid-tile>2</mat-grid-tile>
-    <mat-grid-tile>3</mat-grid-tile>
-    <mat-grid-tile>4</mat-grid-tile>
-    <mat-grid-tile>5</mat-grid-tile>
-    <mat-grid-tile>6</mat-grid-tile>
+    <mat-grid-tile *ngFor="let item of items">
+      <dl>
+        <dd><strong>{{ item.title }}</strong></dd>
+        <dd>{{ item.description }}</dd>
+      </dl>
+    </mat-grid-tile>
   </mat-grid-list>
 </div>
