@@ -8,12 +8,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class SlugComponent {
 
-  public Slug: any;
+  public slug?: string | null;
 
   public constructor(private activatedRoute: ActivatedRoute, private router: Router) {}
 
   ngOnInit() {
-    this.Slug = this.activatedRoute.snapshot.params['slug'];
+    this.slug = this.activatedRoute.snapshot.params['slug'];
   }
 
 }
