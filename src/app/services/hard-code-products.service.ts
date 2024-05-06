@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Product } from '../interfaces/product';
+import { Photos } from '../interfaces/photos';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -129,9 +132,15 @@ export class HardCodeProductsService {
     }
   ];
 
-  constructor() { }
+  constructor(private readonly httpClient: HttpClient) { }
 
   public getItems(): Product[]{
     return this.items;
   }
+
+  public getPhotos(): Observable<Photos[]>{
+    return this.httpClient
+               .get<Photos[]>("https://api.slingacademy.com/v1/sample-data/photos");
+  }
+
 }

@@ -1,5 +1,5 @@
+import { HardCodeProductsService } from './../../services/hard-code-products.service';
 import { Component } from '@angular/core';
-import { HardCodeProductsService } from '../../services/hard-code-products.service';
 import { Product } from '../../interfaces/product';
 
 @Component({
@@ -9,10 +9,17 @@ import { Product } from '../../interfaces/product';
 })
 export class ProductsComponent {
 
-  public constructor(private readonly products: HardCodeProductsService){}
+  public constructor(
+    private readonly products: HardCodeProductsService
+  ){}
 
   public items: Product[] = this.products.getItems();
 
+  public photos: unknown;
 
+  ngOnInit(): void {
+    this.photos = this.products.getPhotos();
+    console.log(this.photos);
+  }
 
 }
