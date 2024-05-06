@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ProviderInjectableRoutingModule } from './provider-injectable-routing.module';
 import { ProviderInjectableComponent } from '../components/provider-injectable/provider-injectable.component';
-import { ProviderServiceService } from '../services/provider-service.service';
+import { RandomService } from '../services/random.service';
 
 
 
@@ -19,7 +19,7 @@ import { ProviderServiceService } from '../services/provider-service.service';
     ProviderInjectableComponent
   ],
   providers: [
-    ProviderServiceService
+    RandomService
   ]
 })
 export class ProviderInjectableModule { }

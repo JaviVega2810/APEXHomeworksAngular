@@ -7,7 +7,7 @@ import { ProviderInjectableModule } from '../provider-injectable-module/provider
 
 })
 
-export class ProviderServiceService {
+export class RandomService {
 
   public data: string[] = [ 'one', 'two' ];
 

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RootServiceService } from '../../services/root-service.service';
+import { RootService } from '../../services/root.service';
 
 @Component({
   selector: 'app-other-component',
@@ -8,6 +8,6 @@ import { RootServiceService } from '../../services/root-service.service';
 })
 export class OtherComponentComponent {
 
-  public constructor(public readonly rootService: RootServiceService) {}
+  public constructor(public readonly rootService: RootService) {}
 
 }

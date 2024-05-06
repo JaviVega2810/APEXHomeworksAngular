@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProviderServiceService } from '../../services/provider-service.service';
+import { RandomService } from '../../services/random.service';
 
 @Component({
   selector: 'app-provider-injectable',
@@ -8,8 +8,8 @@ import { ProviderServiceService } from '../../services/provider-service.service'
 })
 export class ProviderInjectableComponent {
 
-  public constructor(public readonly providerService: ProviderServiceService){}
+  public constructor(public readonly randomService: RandomService){}
 
-  public data: string[] =  this.providerService.data;
+  public data: string[] =  this.randomService.data;
 
 }
