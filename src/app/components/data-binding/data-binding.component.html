@@ -6,9 +6,10 @@
 </div>
 <div>
   <h3>One Way Databinding</h3>
-  <input type="text" name="oneway" [(ngModel)]="hello">
+  <input type="text" name="oneway" [value]="hello">
 </div>
 <div>
-  <h3>Two Way Databinding</h3>
-  <span>{{hello}}</span>
+  <h3 >Two Way Databinding</h3>
+  <span>{{hello}}</span><br>
+  <input [(ngModel)]="hello">
 </div>
