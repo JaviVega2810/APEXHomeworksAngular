@@ -19,11 +19,6 @@ export class MaterialComponentComponent {
     ref.afterClosed().subscribe(result => {
       this.text = result;
     });
-
-    ref.afterClosed().subscribe(item => {
-      console.log(item);
-    });
-
   }
 
 }
