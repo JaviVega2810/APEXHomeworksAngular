@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Product } from '../interfaces/product';
-import { Photos } from '../interfaces/photos';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
@@ -18,7 +17,8 @@ export class HardCodeProductsService {
         '3x9': 100
       },
       photos: [
-        "hello"
+        'https://api.slingacademy.com/public/sample-photos/1.jpeg',
+        'https://api.slingacademy.com/public/sample-photos/2.jpeg'
       ],
       description: 'hello'
     },
@@ -30,7 +30,8 @@ export class HardCodeProductsService {
         '4 asientos': 3999
       },
       photos: [
-        "hello"
+        'https://api.slingacademy.com/public/sample-photos/3.jpeg',
+        'https://api.slingacademy.com/public/sample-photos/4.jpeg'
       ],
       description: 'hello'
     },
@@ -42,7 +43,8 @@ export class HardCodeProductsService {
         '3x9': 100
       },
       photos: [
-        "hello"
+        'https://api.slingacademy.com/public/sample-photos/5.jpeg',
+        'https://api.slingacademy.com/public/sample-photos/6.jpeg'
       ],
       description: 'hello'
     },
@@ -54,7 +56,8 @@ export class HardCodeProductsService {
         '3x9': 100
       },
       photos: [
-        "hello"
+        'https://api.slingacademy.com/public/sample-photos/7.jpeg',
+        'https://api.slingacademy.com/public/sample-photos/8.jpeg'
       ],
       description: 'hello'
     },
@@ -66,7 +69,8 @@ export class HardCodeProductsService {
         '3x9': 100
       },
       photos: [
-        "hello"
+        'https://api.slingacademy.com/public/sample-photos/9.jpeg',
+        'https://api.slingacademy.com/public/sample-photos/10.jpeg'
       ],
       description: 'hello'
     },
@@ -78,7 +82,8 @@ export class HardCodeProductsService {
         '3x9': 100
       },
       photos: [
-        "hello"
+        'https://api.slingacademy.com/public/sample-photos/11.jpeg',
+        'https://api.slingacademy.com/public/sample-photos/12.jpeg'
       ],
       description: 'hello'
     },
@@ -90,7 +95,8 @@ export class HardCodeProductsService {
         '3x9': 100
       },
       photos: [
-        "hello"
+        'https://api.slingacademy.com/public/sample-photos/13.jpeg',
+        'https://api.slingacademy.com/public/sample-photos/14.jpeg'
       ],
       description: 'hello'
     },
@@ -102,7 +108,8 @@ export class HardCodeProductsService {
         '3x9': 100
       },
       photos: [
-        "hello"
+        'https://api.slingacademy.com/public/sample-photos/15.jpeg',
+        'https://api.slingacademy.com/public/sample-photos/16.jpeg'
       ],
       description: 'hello'
     },
@@ -114,7 +121,8 @@ export class HardCodeProductsService {
         '3x9': 100
       },
       photos: [
-        "hello"
+        'https://api.slingacademy.com/public/sample-photos/17.jpeg',
+        'https://api.slingacademy.com/public/sample-photos/18.jpeg'
       ],
       description: 'hello'
     },
@@ -126,7 +134,8 @@ export class HardCodeProductsService {
         '3x9': 100
       },
       photos: [
-        "hello"
+        'https://api.slingacademy.com/public/sample-photos/19.jpeg',
+        'https://api.slingacademy.com/public/sample-photos/20.jpeg'
       ],
       description: 'hello'
     }
@@ -134,13 +143,19 @@ export class HardCodeProductsService {
 
   constructor(private readonly httpClient: HttpClient) { }
 
+  private urlPhotos: string = 'https://api.slingacademy.com/v1/sample-data/photos';
+
   public getItems(): Product[]{
     return this.items;
   }
 
-  public getPhotos(): Observable<Photos[]>{
+  public getItemById(id: string): Product{
+    return Array.prototype.find.call(this.items, x => x.id == id);
+  }
+
+  public getPhotos(): Observable<any>{
     return this.httpClient
-               .get<Photos[]>("https://api.slingacademy.com/v1/sample-data/photos");
+               .get<any>(this.urlPhotos);
   }
 
 }

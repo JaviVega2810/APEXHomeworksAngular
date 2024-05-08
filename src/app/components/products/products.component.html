@@ -2,10 +2,23 @@
   <h1>Listado de Productos</h1>
   <mat-grid-list cols="3" rowHeight="2:1">
     <mat-grid-tile *ngFor="let item of items">
-      <dl>
-        <dd><strong>{{ item.title }}</strong></dd>
-        <dd>{{ item.description }}</dd>
-      </dl>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{ item.title }}</mat-card-title>
+        </mat-card-header>
+
+        <img mat-card-image
+             src={{item.photos[0]}}
+             width="150px"
+             height="150px">
+
+        <mat-card-content>
+          <p>{{ item.description }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="getProductById()">VER PRODUCTO</button>
+        </mat-card-actions>
+      </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
 </div>
