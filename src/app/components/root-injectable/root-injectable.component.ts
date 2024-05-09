@@ -10,4 +10,6 @@ export class RootInjectableComponent {
 
   public constructor(public readonly rootService: RootService){}
 
+  public data = this.rootService.persistentData;
+
 }

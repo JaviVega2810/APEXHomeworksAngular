@@ -3,11 +3,13 @@ import { RootService } from '../../services/root.service';
 
 @Component({
   selector: 'app-other-component',
-  templateUrl: './other-component.component.html',
-  styleUrl: './other-component.component.scss'
+  templateUrl: './other.component.html',
+  styleUrl: './other.component.scss'
 })
-export class OtherComponentComponent {
+export class OtherComponent {
 
   public constructor(public readonly rootService: RootService) {}
+
+  public data = this.rootService.persistentData;
 
 }

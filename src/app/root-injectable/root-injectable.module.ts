@@ -2,15 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { RootInjectableRoutingModule } from './root-injectable-routing.module';
-import { OtherComponentComponent } from '../components/other-component/other-component.component';
+import { OtherComponent } from '../components/other-component/other.component';
 
 
 @NgModule({
   declarations: [
-    OtherComponentComponent
+    OtherComponent
   ],
   exports: [
-    OtherComponentComponent
+    OtherComponent
   ],
   imports: [
     CommonModule,
