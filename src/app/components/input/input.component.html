@@ -4,7 +4,7 @@
     <input matInput [(ngModel)]="text">
   <br><br>
   <div mat-dialog-actions>
-    <button mat-flat-button color="primary" [mat-dialog-close] = "text">Ok</button>
-    <button mat-flat-button color="warn" [mat-dialog-close] = "text">Cancel</button>
+    <button mat-flat-button color="primary" [mat-dialog-close]="text">Ok</button>
+    <button mat-flat-button color="warn" [mat-dialog-close]="text">Cancel</button>
   </div>
 </div>
