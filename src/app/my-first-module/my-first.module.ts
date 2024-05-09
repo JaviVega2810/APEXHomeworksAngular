@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MyFirstModuleRoutingModule } from './my-first-module-routing';
+import { MyFirstRoutingModule } from './my-first-module-routing';
 import { MyFirstComponent } from '../components/my-first-component/my-first-component';
 
 
@@ -14,7 +14,7 @@ import { MyFirstComponent } from '../components/my-first-component/my-first-comp
   ],
   imports: [
     CommonModule,
-    MyFirstModuleRoutingModule
+    MyFirstRoutingModule
   ]
 })
-export class MyFirstModuleModule { }
+export class MyFirstModule { }
