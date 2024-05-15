@@ -8,12 +8,14 @@ import { MatGridListModule } from '@angular/material/grid-list';
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { SingleComponent } from '../../components/products/single/single.component';
+import { PaginationComponent } from '../../components/products/pagination/pagination.component';
 
 
 @NgModule({
   declarations: [
     ProductsComponent,
-    SingleComponent
+    SingleComponent,
+    PaginationComponent
   ],
   imports: [
     CommonModule,
