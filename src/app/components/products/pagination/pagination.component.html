@@ -1,24 +1,3 @@
-<!--<mat-paginator #paginator
-               class="demo-paginator"
-               (page)="handlePageEvent($event)"
-               [length]="length"
-               [pageSize]="pageSize"
-               [disabled]="disabled"
-               [showFirstLastButtons]="showFirstLastButtons"
-               [pageSizeOptions]="showPageSizeOptions ? pageSizeOptions : []"
-               [hidePageSize]="hidePageSize"
-               [pageIndex]="pageIndex"
-               aria-label="Select page">
-</mat-paginator>-->
-<div class="container">
-  <nav class="pagination">
-    <li><a href="#"></a></li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#">6</a></li>
-    <li><a href="#">></a></li>
-  </nav>
-</div>
+<ul class="pagination" *ngFor="let page of pages">
+  <li class="page-item"><a href="#">{{ page }}</a></li>
+</ul>
