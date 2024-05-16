@@ -1,7 +1,7 @@
 <div>
   <h1>Listado de Productos</h1>
   <mat-grid-list cols="3" rowHeight="2:1">
-    <mat-grid-tile *ngFor="let item of items">
+    <mat-grid-tile *ngFor="let item of items | productFilter:0">
       <mat-card class="example-card">
         <mat-card-header>
           <mat-card-title>{{ item.title }}</mat-card-title>
