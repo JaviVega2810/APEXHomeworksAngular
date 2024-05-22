@@ -138,6 +138,32 @@ export class HardCodeProductsService {
         'https://api.slingacademy.com/public/sample-photos/20.jpeg'
       ],
       description: 'hello'
+    },
+    {
+      id: '11',
+      title: 'Numero 11',
+      prices:{
+        '2x6': 50,
+        '3x9': 100
+      },
+      photos: [
+        'https://api.slingacademy.com/public/sample-photos/23.jpeg',
+        'https://api.slingacademy.com/public/sample-photos/24.jpeg'
+      ],
+      description: 'hello'
+    },
+    {
+      id: '12',
+      title: 'Numero 12',
+      prices:{
+        '2x6': 50,
+        '3x9': 100
+      },
+      photos: [
+        'https://api.slingacademy.com/public/sample-photos/25.jpeg',
+        'https://api.slingacademy.com/public/sample-photos/26.jpeg'
+      ],
+      description: 'hello'
     }
   ];
 

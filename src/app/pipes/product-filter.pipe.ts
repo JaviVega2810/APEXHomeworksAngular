@@ -6,7 +6,7 @@ import { Product } from '../interfaces/product';
 })
 export class ProductFilterPipe implements PipeTransform {
 
-  transform(products: Product[], page: number): Product[] {
-    return products.slice(page, page + 5);
+  transform(products: Product[], page: number, pageSize: number = 5): Product[] {
+    return products.slice((page - 1) * pageSize, page * 5);
   }
 }

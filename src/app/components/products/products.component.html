@@ -1,7 +1,7 @@
 <div>
   <h1>Listado de Productos</h1>
   <mat-grid-list cols="3" rowHeight="2:1">
-    <mat-grid-tile *ngFor="let item of items | productFilter:0">
+    <mat-grid-tile *ngFor="let item of items | productFilter:currentPage">
       <mat-card class="example-card">
         <mat-card-header>
           <mat-card-title>{{ item.title }}</mat-card-title>
@@ -23,5 +23,7 @@
   </mat-grid-list>
 </div>
 <div class="footer">
-  <app-pagination></app-pagination>
+  <app-pagination
+          (changePage)="currentPage = $event"
+          [totalItems]="items.length"></app-pagination>
 </div>

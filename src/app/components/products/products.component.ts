@@ -18,6 +18,8 @@ export class ProductsComponent {
 
   public photos: any;
 
+  public currentPage: number = 1;
+
   ngOnInit(): void {
 
     this.subscription = this.products.getPhotos().subscribe({

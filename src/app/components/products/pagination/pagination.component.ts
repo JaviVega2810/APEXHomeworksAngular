@@ -1,37 +1,31 @@
-import { Component } from '@angular/core';
-import { PageEvent } from '@angular/material/paginator';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-pagination',
   templateUrl: './pagination.component.html',
   styleUrl: './pagination.component.scss'
 })
-export class PaginationComponent {
+export class PaginationComponent implements OnInit{
 
-  public pages: number[] = [1,2,3,4,5];
+  @Input() public totalItems: number = 0;
 
-  /*length = 50;
-  pageSize = 10;
-  pageIndex = 0;
-  pageSizeOptions = [5, 10, 25];
+  public pageSize: number = 5;
 
-  hidePageSize = false;
-  showPageSizeOptions = true;
-  showFirstLastButtons = true;
-  disabled = false;
+  public totalPages: number[] = [];
 
-  pageEvent!: PageEvent;
+  public page: number =  0;
 
-  handlePageEvent(e: PageEvent) {
-    this.pageEvent = e;
-    this.length = e.length;
-    this.pageSize = e.pageSize;
-    this.pageIndex = e.pageIndex;
+  @Output() changePage = new EventEmitter<number>();
+
+  ngOnInit(): void {
+    this.totalPages = new Array(Math.ceil(this.totalItems / this.pageSize));
+    console.log(this.totalPages);
   }
 
-  setPageSizeOptions(setPageSizeOptionsInput: string) {
-    if (setPageSizeOptionsInput) {
-      this.pageSizeOptions = setPageSizeOptionsInput.split(',').map(str => +str);
-    }
-  }*/
+  public switchPage(currentPage: number){
+    this.page = currentPage;
+    this.changePage.emit(this.page);
+  }
+
+
 }
