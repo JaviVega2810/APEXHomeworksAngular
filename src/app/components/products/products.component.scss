@@ -4,12 +4,12 @@
 
 
 .example-card {
-  max-width: 400px;
-}
-
-.product-image{
-  width: 10px;
-  height: 10px;
+  align-items: center;
+  border-radius: 20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #4F6380;
+  width: 550px;
 }
 
 .footer{

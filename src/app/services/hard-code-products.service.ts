@@ -11,157 +11,157 @@ export class HardCodeProductsService {
   public items: Product[] = [
     {
       id: '1',
-      title: 'Mantel',
+      title: 'Bulbasaur',
       prices:{
         '2x6': 50,
         '3x9': 100
       },
       photos: [
-        'https://api.slingacademy.com/public/sample-photos/1.jpeg',
-        'https://api.slingacademy.com/public/sample-photos/2.jpeg'
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png',
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png'
       ],
-      description: 'hello'
+      description: 'First leaf pokemon'
     },
     {
       id: '2',
-      title: 'Sofá',
+      title: 'Ivysaur',
       prices:{
         '2 asientos': 2999,
         '4 asientos': 3999
       },
       photos: [
-        'https://api.slingacademy.com/public/sample-photos/3.jpeg',
-        'https://api.slingacademy.com/public/sample-photos/4.jpeg'
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png',
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/2.png'
       ],
-      description: 'hello'
+      description: 'Enhanced leaf pokemon'
     },
     {
       id: '3',
-      title: 'Colchón',
+      title: 'Venasaur',
       prices:{
         '2x6': 50,
         '3x9': 100
       },
       photos: [
-        'https://api.slingacademy.com/public/sample-photos/5.jpeg',
-        'https://api.slingacademy.com/public/sample-photos/6.jpeg'
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png',
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/3.png'
       ],
-      description: 'hello'
+      description: 'Powerful leaf pokemon'
     },
     {
       id: '4',
-      title: 'Mesa',
+      title: 'Charmander',
       prices:{
         '2x6': 50,
         '3x9': 100
       },
       photos: [
-        'https://api.slingacademy.com/public/sample-photos/7.jpeg',
-        'https://api.slingacademy.com/public/sample-photos/8.jpeg'
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png',
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/4.png'
       ],
       description: 'hello'
     },
     {
       id: '5',
-      title: 'Refrigerador',
+      title: 'Charmeleon',
       prices:{
         '2x6': 50,
         '3x9': 100
       },
       photos: [
-        'https://api.slingacademy.com/public/sample-photos/9.jpeg',
-        'https://api.slingacademy.com/public/sample-photos/10.jpeg'
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png',
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/5.png'
       ],
       description: 'hello'
     },
     {
       id: '6',
-      title: 'Estufa',
+      title: 'Charizard',
       prices:{
         '2x6': 50,
         '3x9': 100
       },
       photos: [
-        'https://api.slingacademy.com/public/sample-photos/11.jpeg',
-        'https://api.slingacademy.com/public/sample-photos/12.jpeg'
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png',
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/6.png'
       ],
       description: 'hello'
     },
     {
       id: '7',
-      title: 'Set Cubiertos',
+      title: 'Squirtle',
       prices:{
         '2x6': 50,
         '3x9': 100
       },
       photos: [
-        'https://api.slingacademy.com/public/sample-photos/13.jpeg',
-        'https://api.slingacademy.com/public/sample-photos/14.jpeg'
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png',
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/7.png'
       ],
       description: 'hello'
     },
     {
       id: '8',
-      title: 'Cafetera',
+      title: 'Wartortle',
       prices:{
         '2x6': 50,
         '3x9': 100
       },
       photos: [
-        'https://api.slingacademy.com/public/sample-photos/15.jpeg',
-        'https://api.slingacademy.com/public/sample-photos/16.jpeg'
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png',
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/8.png'
       ],
       description: 'hello'
     },
     {
       id: '9',
-      title: 'Vajilla',
+      title: 'Blastoise',
       prices:{
         '2x6': 50,
         '3x9': 100
       },
       photos: [
-        'https://api.slingacademy.com/public/sample-photos/17.jpeg',
-        'https://api.slingacademy.com/public/sample-photos/18.jpeg'
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png',
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/9.png'
       ],
       description: 'hello'
     },
     {
       id: '10',
-      title: 'Licuadora',
+      title: 'Caterpie',
       prices:{
         '2x6': 50,
         '3x9': 100
       },
       photos: [
-        'https://api.slingacademy.com/public/sample-photos/19.jpeg',
-        'https://api.slingacademy.com/public/sample-photos/20.jpeg'
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png',
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/10.png'
       ],
       description: 'hello'
     },
     {
       id: '11',
-      title: 'Numero 11',
+      title: 'Metapod',
       prices:{
         '2x6': 50,
         '3x9': 100
       },
       photos: [
-        'https://api.slingacademy.com/public/sample-photos/23.jpeg',
-        'https://api.slingacademy.com/public/sample-photos/24.jpeg'
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png',
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/11.png'
       ],
       description: 'hello'
     },
     {
       id: '12',
-      title: 'Numero 12',
+      title: 'Butterfree',
       prices:{
         '2x6': 50,
         '3x9': 100
       },
       photos: [
-        'https://api.slingacademy.com/public/sample-photos/25.jpeg',
-        'https://api.slingacademy.com/public/sample-photos/26.jpeg'
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png',
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/12.png'
       ],
       description: 'hello'
     }
