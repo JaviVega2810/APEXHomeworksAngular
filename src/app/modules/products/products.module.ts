@@ -17,12 +17,14 @@ import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
+import { RoundPricePipe } from '../../pipes/round-price.pipe';
 
 @NgModule({
   declarations: [
     ProductsComponent,
     PaginationComponent,
     ProductFilterPipe,
+    RoundPricePipe,
     SingleComponent,
   ],
   imports: [

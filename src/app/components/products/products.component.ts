@@ -34,10 +34,6 @@ export class ProductsComponent {
 
   }
 
-  getProductById(id: string = '1'): void{
-    console.log(this.products.getItemById(id));
-  }
-
   ngOnDestroy(): void {
     this.subscription?.unsubscribe();
   }

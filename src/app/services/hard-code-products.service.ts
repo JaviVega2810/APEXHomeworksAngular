@@ -13,8 +13,8 @@ export class HardCodeProductsService {
       id: '1',
       title: 'Bulbasaur',
       prices:{
-        '2x6': 50,
-        '3x9': 100
+        'normal': 50.68,
+        'priceOff': 99.51
       },
       photos: [
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png',
@@ -26,8 +26,8 @@ export class HardCodeProductsService {
       id: '2',
       title: 'Ivysaur',
       prices:{
-        '2 asientos': 2999,
-        '4 asientos': 3999
+        'normal': 50.23,
+        'priceOff': 99.51
       },
       photos: [
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png',
@@ -39,8 +39,8 @@ export class HardCodeProductsService {
       id: '3',
       title: 'Venasaur',
       prices:{
-        '2x6': 50,
-        '3x9': 100
+        'normal': 200.49,
+        'priceOff': 99.51
       },
       photos: [
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png',
@@ -52,8 +52,8 @@ export class HardCodeProductsService {
       id: '4',
       title: 'Charmander',
       prices:{
-        '2x6': 50,
-        '3x9': 100
+        'normal': 500.51,
+        'priceOff': 99.51
       },
       photos: [
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png',
@@ -65,8 +65,8 @@ export class HardCodeProductsService {
       id: '5',
       title: 'Charmeleon',
       prices:{
-        '2x6': 50,
-        '3x9': 100
+        'normal': 50.23,
+        'priceOff': 99.51
       },
       photos: [
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png',
@@ -78,8 +78,8 @@ export class HardCodeProductsService {
       id: '6',
       title: 'Charizard',
       prices:{
-        '2x6': 50,
-        '3x9': 100
+        'normal': 50.23,
+        'priceOff': 99.51
       },
       photos: [
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png',
@@ -91,8 +91,8 @@ export class HardCodeProductsService {
       id: '7',
       title: 'Squirtle',
       prices:{
-        '2x6': 50,
-        '3x9': 100
+        'normal': 50.23,
+        'priceOff': 99.51
       },
       photos: [
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png',
@@ -104,8 +104,8 @@ export class HardCodeProductsService {
       id: '8',
       title: 'Wartortle',
       prices:{
-        '2x6': 50,
-        '3x9': 100
+        'normal': 50.23,
+        'priceOff': 99.51
       },
       photos: [
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png',
@@ -117,8 +117,8 @@ export class HardCodeProductsService {
       id: '9',
       title: 'Blastoise',
       prices:{
-        '2x6': 50,
-        '3x9': 100
+        'normal': 50.23,
+        'priceOff': 99.51
       },
       photos: [
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png',
@@ -130,8 +130,8 @@ export class HardCodeProductsService {
       id: '10',
       title: 'Caterpie',
       prices:{
-        '2x6': 50,
-        '3x9': 100
+        'normal': 50.23,
+        'priceOff': 99.51
       },
       photos: [
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png',
@@ -143,8 +143,8 @@ export class HardCodeProductsService {
       id: '11',
       title: 'Metapod',
       prices:{
-        '2x6': 50,
-        '3x9': 100
+        'normal': 50.23,
+        'priceOff': 99.51
       },
       photos: [
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png',
@@ -156,8 +156,8 @@ export class HardCodeProductsService {
       id: '12',
       title: 'Butterfree',
       prices:{
-        '2x6': 50,
-        '3x9': 100
+        'normal': 50.23,
+        'priceOff': 99.51
       },
       photos: [
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png',
